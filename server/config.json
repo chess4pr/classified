@@ -1,0 +1,27 @@
+{
+  "name": "www.vazoga.com",
+  "url": "https://vazoga.com:3003",
+  "fromMail": "noreply@www.vazoga.com",
+  "restApiRoot": "/api",
+  "initialData": true,
+  "host": "0.0.0.0",
+  "port": 3003,
+  "mandrillApiKey": "ee572264d1f5f072576b6e10f7784806-4167c382-c63fa152",
+  "remoting": {
+    "context": false,
+    "rest": {
+      "handleErrors": false,
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false
+  }
+}

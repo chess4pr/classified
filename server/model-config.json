@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "UserCredential": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "UserIdentity": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongo",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongo",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": false
+    }
+  },
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "category": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "page": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "mailgun",
+    "public": false
+  },
+  "upload_file": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "static": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "translation": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "messages": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "comments": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "likes": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "post": {
+    "dataSource": "mailgun",
+    "public": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "upload_file",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "ext": {
+      "type": "string"
+    },
+    "mime": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "related": {
+      "type": [
+        "object"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "__v": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

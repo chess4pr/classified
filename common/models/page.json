@@ -1,0 +1,137 @@
+{
+  "name": "page",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "local": {
+      "type": "string",
+      "required": true
+    },
+    "ip": {
+      "type": "string",
+      "required": false
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "index": {
+        "unique": true
+      }
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "urlcategory": {
+      "type": "string",
+      "required": false
+    },
+    "category": {
+      "type": "objectid"
+    },
+    "category_title": {
+      "type": "string",
+      "required": false
+    },
+    "subcategory": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "string",
+      "required": false
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "donor": {
+      "type": "boolean",
+      "default": true
+    },
+    "parsed": {
+      "type": "boolean",
+      "default": false
+    },
+    "images": {
+      "type": "string"
+    },
+    "donor_images": {
+      "type": "array"
+    },
+    "edited": {
+      "type": "boolean",
+      "default": false
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author": {
+      "type": "objectid"
+    },
+    "phone": {
+      "type": "string",
+      "required": false
+    },
+    "locality": {
+      "type": "string",
+      "required": false
+    },
+    "addressregion": {
+      "type": "string",
+      "required": false
+    },
+    "addressdetails": {
+      "type": "string",
+      "required": false
+    },
+    "localityurl": {
+      "type": "string",
+      "required": false
+    },
+    "price": {
+      "type": "string",
+      "required": false
+    },
+    "currency": {
+      "type": "string",
+      "required": false
+    },
+    "tags": {
+      "type": "string",
+      "required": false
+    },
+    "views": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "likes": {
+      "type": "array",
+      "required": false
+    },
+    "comment": {
+      "type": "string",
+      "required": false
+    },
+    "commenttype": {
+      "type": "string",
+      "required": false
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
